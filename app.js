@@ -4,6 +4,14 @@ const express = require("express");
 const app = express();
 const yelp = require("yelp-fusion");
 const request = require("request");
+var path = require ('path')
+var serveStatic = require('serve-static')
+
+app.use(serveStatic(path.join(__dirname, 'dist')))
+
+var port = process.env.PORT || 5000
+app.listen(port)
+console.log('server started ' + port)
 
 app.set("view engine", "ejs");
 const apiKey = 'bW8kVOe_WJy982_-ntTDgWssxtbTmCYHRglXX74YQub53e1zFMOh4BRqa0qbYiDXkUIjlyHFIq3xTN_DN5ubfklOoJDV9FvJ4llKbmfcTbQYqomSNqFahBem-mpVXnYx';
