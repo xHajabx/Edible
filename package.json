@@ -1,0 +1,16 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js"
+  },
+  "author": "hajab syeda",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^2.1.1",
+    "yelp-fusion": "^3.0.0"
+  }
+}

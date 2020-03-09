@@ -1,0 +1,44 @@
+<%- include("partials/header"); %>
+<h1>
+	Restaurants for your taste! 
+</h1>
+
+<% for(var i = 0; i < data.length; i++) { %>
+
+<div class="container">
+	<div class="row align-items-center content">
+		<div class="col-md-6 order-2 order-md-1">
+			<img src="<%-data[i]["image_url"] %>" class="img-fluid">
+		</div>
+		<div class="col-md-6 text-center order-1 order-md-2">
+			<div class="row justify-content-center">
+				<div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <p>Name of Restaurant: <%= data[i]["name"] %></p>
+
+		<p>Rating of Restaurant: <%= data[i]["rating"] %></p>
+
+		<p>Price Range of Restaurant: <%= data[i]["price"] %> </p>
+
+		<p>	Contact Restaurant: <%= data[i]["phone"] %> </p>
+		<p>
+			Located in: 
+			<%= data[i]["location"]["city"]; %>
+			<%= data[i]["location"]["state"]; %><
+		</p>
+			
+			</div>
+			
+		</div>
+		
+			
+	</div>
+</div>
+	
+	
+	
+	
+
+<% } %> 
+
+<%- include("partials/footer") %>
+

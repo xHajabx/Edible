@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	</head>		<script src="https://kit.fontawesome.com/ee5db17753.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<h1 style="text-align: center"> Find Your Next Favorite Restaurant </h1>
+	<div style="margin: 0 auto; width: 30%;">
+		<form action="/test" method="GET">
+			<div class="form-group">
+				<input class="form-control" type="text" name="name" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" name="location" placeholder="location">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" name="rating" placeholder="Out of 5">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" name="price" placeholder="Enter $,$$,$$$,$$$$">
+			<div class="form-group">
+				<button class="btn btn-lg btn-success btn-block">Submit</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<%- include("partials/footer") %>
+
+
+
