@@ -57,7 +57,10 @@ app.get("/search", function(req, res){
 
 app.get("/test2", function(req, res){
 	res.render("test2", {data:data});
-	
+});
+
+app.get("*", function(req, res){
+	res.redirect("landing");
 });
 
 app.listen(3000, function(req, res){
