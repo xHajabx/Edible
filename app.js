@@ -63,8 +63,8 @@ app.get("/search", function(req, res){
 	res.render("search");
 });
 
-app.get("/test2", function(req, res){
-	res.render("test2", {data:data});
+app.get("/map", function(req, res){
+	res.render("map", {data:data});
 });
 
 app.get("*", function(req, res){
